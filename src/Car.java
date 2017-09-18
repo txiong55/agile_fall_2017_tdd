@@ -60,6 +60,9 @@ public class Car {
 			speed = limit;
 		}else {
 			speed-= amount;
+			if (speed < 0) {
+				speed = 0;
+			}
 		}
 		
 	}
